@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype inlämningsuppgift 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-ng-app="">
+
+    <!-- Header -->
+    <header>
+        <!-- Top Menu -->
+        <div id="topmenu">
+            <div class="topmenuContainer">
+                <div class="row">
+                    <div id="socialMedia" class="col-md-3">
+                        <a href="#" class="socialMediaButtons"><i class="fab fa-facebook-f sLink"></i></a>
+                        <a href="#" class="socialMediaButtons"><i class="fab fa-twitter sLink"></i></a>
+                        <a href="#" class="socialMediaButtons"><i class="fab fa-behance sLink"></i></a>
+                        <a href="#" class="socialMediaButtons"><i class="fab fa-pinterest sLink"></i></a>
+                        <a href="#" class="socialMediaButtons"><i class="fab fa-youtube sLink"></i></a>
+                        
+                        
+                    </div>
+                    <div id="faq" class="col-md-1"><a href="#" class="socialMediaButtons">FAQ</a></div>
+                    <div id="terms" class="col-md-7"><a href="#" class="socialMediaButtons">TERMS</a></div>
+                    <div id="emailLink" class="col-md-1">
+                        <a href="mailto:info@webmail.com" class="socialMediaButtons"><i class="far fa-envelope"><span class="pl-2">info@webmail.com</span></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- logo, navbar -->
+        <div id="menu">
+            <div class="topmenuContainer">
+                <div class="row menuRow">
+                    <img src="images/logotype_transparent.png" class="col-md-2">
+
+
+                    <div class="dropdown col-md-1 pt-3">
+                        <button class="btn languageButton" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            EN <i class="fas fa-angle-down"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">SWE</a>
+                            <a class="dropdown-item" href="#">NOR</a>
+                            <a class="dropdown-item" href="#">DAN</a>
+                        </div>
+                    </div>
+
+                    <div class="phoneNumber col-md-2">
+                        +90878 87 878 7
+                    </div>
+
+                    <div class="menuOptions col-md-5 pt-3 pl-5">
+                        <a href="#" class="sLink">Home</a>
+                        <a href="#" class="sLink">About</a>
+                        <a href="#" class="sLink">Services</a>
+                        <a href="#" class="sLink">Pages</a>
+                        <a href="#" class="sLink">News</a>
+                        <a href="#" class="sLink">Contact</a>
+                    </div>
+
+                    <div class="quote col-md-2">
+                        GET A QUOTE
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Banner -->
+        <div id="banner">
+            <p id="topBannerText">DIGITAL MARKETING</p>
+            <p id="middleBannerText">Product Store</p>
+            <div id="bannerLinks">
+                <a href="#">Home </a>
+                <p> | </p>
+                <a href="#"> Shop</a>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div id="content">
+            <div class="container">
+
+                <!-- Shipping tags -->
+                <div class="shippingTags">
+                    <div class="row shippingRow justify-content-center">
+                        <div class="card mb-3 col-md-3 shipCard">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 img-box">
+                                    <img src="images/truck.png" class="card-img shipping-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title ship-title">Free Shipping</h5>
+                                        <p class="card-text">Orders over $100</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-md-3 shipCard">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 img-box">
+                                    <img src="images/clock.png" class="card-img shipping-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title ship-title">Free Return</h5>
+                                        <p class="card-text">In 30 days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-md-3 shipCard">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 img-box">
+                                    <img src="images/lock.png" class="card-img shipping-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title ship-title">100% secure</h5>
+                                        <p class="card-text">Shipping</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-md-3 shipCard">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 img-box">
+                                    <img src="images/pricetag.png" class="card-img shipping-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title ship-title">Best Price</h5>
+                                        <p class="card-text">Granted</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sorting -->
+
+                <div class="sortSearch">
+                    <div class="row justify-content-between">
+
+                        <div class="gridButton col-md-1 gridListButton">
+                            <a href="#"><i class="fas fa-th"></i></a>
+                        </div>
+
+
+
+                        <div class="listButton col-md-1  gridListButton">
+                            <a href="#"><i class="fas fa-bars"></i></a>
+                        </div>
+                        <p id="numberShowing" class=" col-md-3 offset-md-2">Showing 1-12 out of 30 results</p>
+
+
+                        <div class="dropdown col-md-2 dropdownButton">
+                            <button class="btn sortButton" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Sort By <i class="fas fa-angle-down"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Alternative 1</a>
+                                <a class="dropdown-item" href="#">Alternative 2</a>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- Searching -->
+
+                        <div class="searchBorderBox col-md-3">
+                            <div class="input-group searchBox">
+                                <input type="text" class="form-control" placeholder="Search from here...."
+                                    aria-label="Search from here...." aria-describedby="basic-addon2" id="searchInput">
+                                <div class="input-group-append">
+                                    <span class="input-group-text mag-glass" id="basic-addon2"><i
+                                            class="fas fa-search"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Cards -->
+
+                <!-- first row -->
+                <div class="cards-container">
+                    <div class="row mt-5">
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second row -->
+                    <div class="row">
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third row -->
+                    <div class="row">
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Forth row -->
+                    <div class="row">
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 card-size col shadow">
+                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-size">Apple iPhone</h5>
+                                <div class="row">
+                                    <p class="card-text card-text-color col-md-6">$500</p>
+
+                                    <p class="card-text card-text-size col-md-6">
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                        <i class="fas fa-star yellow"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- scrolling buttons -->
+                <div class="row justify-content-center scrollButtonRow mt-5 mb-5">
+                    <div class="col-md-1 m-1"><button class="scrollButton grey"><i
+                                class="fas fa-arrow-left arrowColor"></i></button></div>
+                    <div class="col-md-1 m-1"><button class="scrollButton grey">01</button></div>
+                    <div class="col-md-1 m-1"><button class="scrollButton orange">02</button></div>
+                    <div class="col-md-1 m-1"><button class="scrollButton grey">...</button></div>
+                    <div class="col-md-1 m-1"><button class="scrollButton grey">04</button></div>
+                    <div class="col-md-1 m-1"><button class="scrollButton grey"><i
+                                class="fas fa-arrow-right arrowColor"></i></button></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="footer">
+            <div class="container footer-container">
+                <div class="row justify-content-center">
+                    <!-- first card -->
+                    <div class="card footer-card col">
+                        <img src="images/logotype_transparent_white.png" class="card-img-top card-background">
+                        <div class="card-body card-background pt-3 pb-3 pl-0">
+                            <p class="card-text footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia fuga
+                                distinctio sint officiis dolor, labore et consequatur, rem eum porro neque pariatur
+                                ducimus obcaecati ullam placeat quaerat vero itaque necessitatibus quidem eveniet
+                                deserunt. Eaque, corporis.</p>
+                            <div class="row justify-content-center">
+                                <div class="facebook footer-button"><a href="#" class="btn"><i
+                                            class="fab fa-facebook-f"></i></a></div>
+                                <div class="facebook footer-button twitter"><a href="#" class="btn"><i
+                                            class="fab fa-twitter"></i></a></div>
+                                <div class="facebook footer-button"><a href="#" class="btn"><i
+                                            class="fab fa-behance"></i></a></div>
+                                <div class="facebook footer-button"><a href="#" class="btn"><i
+                                            class="fab fa-youtube"></i></a></div>
+                                <div class="facebook footer-button"><a href="#" class="btn"><i
+                                            class="fab fa-pinterest"></i></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- second card -->
+
+                    <div class="card footer-card second-card card-background col">
+                        <div class="card-body">
+                            <div class="card-title moreLinks">
+                                <p>More Links<span class="dot">.</span></p>
+                            </div>
+                            <div class="row">
+                                <div class="firstColumn">
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">Paid SEO</p>
+                                    </a>
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">Digital Marketing</p>
+                                    </a>
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">Strategy Planning</p>
+                                    </a>
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">Offline SEO</p>
+                                    </a>
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">Page RankUp</p>
+                                    </a>
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">User Panel</p>
+                                    </a>
+                                </div>
+                                <div class="secondColumn ml-5">
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">Services</p>
+                                    </a>
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">Our Team</p>
+                                    </a>
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">News</p>
+                                    </a>
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">Shop</p>
+                                    </a>
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">Contact Us</p>
+                                    </a>
+                                    <a href="#" class="footer-link">
+                                        <p class="footer-text">Book Appointment</p>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- third card -->
+
+                    <div class="card footer-card col">
+                        <div class="card-body card-background">
+                            <div class="card-title moreLinks">
+                                <p>News Feeds<span class="dot">.</span></p>
+                            </div>
+                            <div class="card mb-1 footer-card">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4 card-background">
+                                        <img src="images/television-png-tv-24.png" class="card-img pt-4" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body card-background">
+
+                                            <p class="card-text blog-text">Lorem ipsum dolor sit, amet consectetur
+                                                adipisicing.</p>
+                                            <p class="card-text"><small class="text-muted">14 july 2019</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-1 footer-card">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4 card-background">
+                                        <img src="images/television-png-tv-24.png" class="card-img pt-4" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body card-background">
+
+                                            <p class="card-text blog-text">Lorem ipsum dolor sit, amet consectetur
+                                                adipisicing.</p>
+                                            <p class="card-text"><small class="text-muted">14 july 2019</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-1 footer-card">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4 card-background">
+                                        <img src="images/television-png-tv-24.png" class="card-img pt-4" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body card-background">
+
+                                            <p class="card-text blog-text">Lorem ipsum dolor sit, amet consectetur
+                                                adipisicing.</p>
+                                            <p class="card-text"><small class="text-muted">14 july 2019</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="copyright col row">
+                        <p class="footer-text">Copyright By <p class="orangeText">&copy;NilArtStudio - </p>
+                            <p class="footer-text pl-1"> 2019</p>
+                        </p>
+                    </div>
+
+
+                    <button class="backToTop col btn">
+                        <a href="#">
+                            <p class="backToTopText">BACK TO TOP</p>
+                        </a>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
