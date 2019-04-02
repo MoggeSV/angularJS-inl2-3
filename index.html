@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="angularApp">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Prototype inlämningsuppgift 1</title>
+    <title>Prototype inlämningsuppgift 2</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js"></script>
     <script src="app.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="routes/routes.js"></script>
+    <script src="controllers/controllers.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-ng-app="">
+<body>
 
     <!-- Header -->
     <header>
@@ -165,14 +167,14 @@
                 <div class="sortSearch">
                     <div class="row justify-content-between">
 
-                        <div class="gridButton col-md-1 gridListButton">
-                            <a href="#"><i class="fas fa-th"></i></a>
+                        <div class="gridButton col-md-1 gridListButton" active>
+                            <a href="#!/"><i class="fas fa-th"></i></a>
                         </div>
 
 
 
-                        <div class="listButton col-md-1  gridListButton">
-                            <a href="#"><i class="fas fa-bars"></i></a>
+                        <div class="gridButton col-md-1  gridListButton">
+                            <a href="#!listview"><i class="fas fa-bars"></i></a>
                         </div>
                         <p id="numberShowing" class=" col-md-3 offset-md-2">Showing 1-12 out of 30 results</p>
 
@@ -209,236 +211,9 @@
 
                 <!-- Cards -->
 
-                <!-- first row -->
                 <div class="cards-container">
                     <div class="row mt-5">
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- second row -->
-                    <div class="row">
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- third row -->
-                    <div class="row">
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Forth row -->
-                    <div class="row">
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 card-size col shadow">
-                            <img src="images/Apple-iPhone-PNG-Transparent-Background.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title card-title-size">Apple iPhone</h5>
-                                <div class="row">
-                                    <p class="card-text card-text-color col-md-6">$500</p>
-
-                                    <p class="card-text card-text-size col-md-6">
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                        <i class="fas fa-star yellow"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <div data-ng-view></div>
                     </div>
                 </div>
 
@@ -459,7 +234,7 @@
 
         </div>
     </main>
-
+<!-- FOOTER -->
 
     <footer>
         <div id="footer">
@@ -631,15 +406,12 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="controllers/controllers.js"></script>
+    <script src="models/products.js"></script>
 </body>
 
 </html>

@@ -189,7 +189,7 @@ height: 80%;
     color: #999ea5;
 }
 
-.listButton {
+.gridButton:active {
     background-color: #ff8155;
     width: 60px;
     height: 60px;
@@ -264,6 +264,15 @@ height: 80%;
     min-height: 400px;
 }
 
+.image-size{
+    max-width: 340px;
+    max-height: 300px;
+}
+
+.img-size-small{
+    max-width: 250px;
+    max-width: 200px;
+}
 
 
 .card-text-color {
