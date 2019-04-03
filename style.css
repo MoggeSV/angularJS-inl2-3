@@ -182,6 +182,10 @@ height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.gridButton a, .gridButtonActive a {
+    color:#fff !important;
 }
 
 .gridButton i {
@@ -189,7 +193,7 @@ height: 80%;
     color: #999ea5;
 }
 
-.gridButton:active {
+.gridButtonActive {
     background-color: #ff8155;
     width: 60px;
     height: 60px;
@@ -197,6 +201,7 @@ height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2em;
 }
 
 .listButton i {
@@ -394,4 +399,32 @@ text-align: center;
 
 .backToTop a{
     text-decoration: none;
+}
+
+.stars-outer{
+    position: relative;
+    display: inline-block;
+}
+
+.stars-inner{
+    position: absolute;
+    top:0;
+    left:0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.stars-outer::before{
+    content:"\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    color: #ccc;
+    font-weight: 900;
+}
+
+.stars-inner::before{
+    content:"\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    color: #f8ce0b;
+    font-weight: 900;
 }

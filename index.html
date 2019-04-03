@@ -12,7 +12,7 @@
     <script src="app.js"></script>
     <script src="routes/routes.js"></script>
     <script src="controllers/controllers.js"></script>
-    
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -32,14 +32,15 @@
                         <a href="#" class="socialMediaButtons"><i class="fab fa-behance sLink"></i></a>
                         <a href="#" class="socialMediaButtons"><i class="fab fa-pinterest sLink"></i></a>
                         <a href="#" class="socialMediaButtons"><i class="fab fa-youtube sLink"></i></a>
-                        
-                        
+
+
                     </div>
                     <div id="faq" class="col-md-1"><a href="#" class="socialMediaButtons">FAQ</a></div>
                     <div id="terms" class="col-md-7"><a href="#" class="socialMediaButtons">TERMS</a></div>
                     <div id="emailLink" class="col-md-1">
-                        <a href="mailto:info@webmail.com" class="socialMediaButtons"><i class="far fa-envelope"><span class="pl-2">info@webmail.com</span></i></a>
-                        
+                        <a href="mailto:info@webmail.com" class="socialMediaButtons"><i class="far fa-envelope"><span
+                                    class="pl-2">info@webmail.com</span></i></a>
+
                     </div>
                 </div>
             </div>
@@ -165,17 +166,17 @@
                 <!-- Sorting -->
 
                 <div class="sortSearch">
-                    <div class="row justify-content-between">
+                    <div class="row justify-content-between" ng-controller="buttonColorController">
+                        
+                            <div class="" ng-class="{'gridButtonActive': cardActive, 'gridButton': !cardActive }">
+                                <a href="#!/"><i class="fas fa-th" ng-click="cardActive = true"></i></a>
+                            </div>
 
-                        <div class="gridButton col-md-1 gridListButton" active>
-                            <a href="#!/"><i class="fas fa-th"></i></a>
-                        </div>
+                            <div class="" ng-class="{'gridButton': cardActive, 'gridButtonActive': !cardActive }">
+                                <a href="#!listview"><i class="fas fa-bars" ng-click="cardActive = false"></i></a>
+                            </div>
+                        
 
-
-
-                        <div class="gridButton col-md-1  gridListButton">
-                            <a href="#!listview"><i class="fas fa-bars"></i></a>
-                        </div>
                         <p id="numberShowing" class=" col-md-3 offset-md-2">Showing 1-12 out of 30 results</p>
 
 
@@ -184,9 +185,11 @@
                                 aria-haspopup="true" aria-expanded="false">
                                 Sort By <i class="fas fa-angle-down"></i>
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Alternative 1</a>
-                                <a class="dropdown-item" href="#">Alternative 2</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                                ng-controller="sortController" ng-model="$root.sortColumn">
+                                <option class="dropdown-item" ng-click="sortData('name')">Name</option>
+                                <option class="dropdown-item" ng-click="sortData('price')">Price</option>
+                                <option class="dropdown-item" ng-click="sortData('rating')">Rating</option>
 
                             </div>
                         </div>
@@ -197,8 +200,7 @@
 
                         <div class="searchBorderBox col-md-3">
                             <div class="input-group searchBox">
-                                <input type="text" class="form-control" placeholder="Search from here...."
-                                    aria-label="Search from here...." aria-describedby="basic-addon2" id="searchInput">
+                                <input type="text" class="form-control" placeholder="Search from here...." id="searchInput" ng-model="searchText">
                                 <div class="input-group-append">
                                     <span class="input-group-text mag-glass" id="basic-addon2"><i
                                             class="fas fa-search"></i></span>
@@ -234,7 +236,7 @@
 
         </div>
     </main>
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
     <footer>
         <div id="footer">
@@ -410,7 +412,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script src="controllers/controllers.js"></script>
+    <script src="controllers/angularController.js"></script>
+    <script src="controllers/buttonColorController.js"></script>
+    <script src="controllers/ratingController.js"></script>
+    <script src="controllers/searchController.js"></script>
+    <script src="controllers/sortController.js"></script>
     <script src="models/products.js"></script>
 </body>
 

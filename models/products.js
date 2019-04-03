@@ -1,4 +1,4 @@
-let products = [
+var products = [
     { image:"images/laptop-png.jpg", name: "Brilliant Laptop", price: "$400", rating: "4" },
     { image:"images/lens-1933639_960_720.png", name: "Fantastic Lens", price: "$500", rating: "5" },
     { image:"images/television-png-tv-24.png", name: "Amazing TV", price: "$600", rating: "3" },
@@ -12,3 +12,4 @@ let products = [
     { image:"images/Apple-iPhone-PNG-Transparent-Background.png", name: "iPhone 11", price: "$600", rating: "4" },
     { image:"images/lens-1933639_960_720.png", name: "Camera Lens", price: "$400", rating: "4" }
 ];
+
