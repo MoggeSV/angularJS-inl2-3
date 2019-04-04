@@ -11,7 +11,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js"></script>
     <script src="app.js"></script>
     <script src="routes/routes.js"></script>
-    <script src="controllers/controllers.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
@@ -200,10 +199,11 @@
 
                         <div class="searchBorderBox col-md-3">
                             <div class="input-group searchBox">
-                                <input type="text" class="form-control" placeholder="Search from here...." id="searchInput" ng-model="searchText">
+                                <input type="text" class="form-control" placeholder="Search from here...." id="searchInput" ng-model="$root.searchText">
                                 <div class="input-group-append">
-                                    <span class="input-group-text mag-glass" id="basic-addon2"><i
-                                            class="fas fa-search"></i></span>
+                                    <span class="input-group-text mag-glass" id="basic-addon2">
+                                        <i class="fas fa-search"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>

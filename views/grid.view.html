@@ -1,4 +1,4 @@
-
+<div ng-controller="angularController">
     <div class="row">
         <div class="card m-3 card-size col-md-4 shadow" data-ng-repeat="product in products | filter: searchText | orderBy: sortColumn:reverseSort">
             <img src="{{product.image}}" class="card-img-top">
@@ -16,3 +16,4 @@
             </div>
         </div>
     </div>
+</div>

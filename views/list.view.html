@@ -1,5 +1,5 @@
-
-    <div ng-repeat="product in products | filter: searchText| orderBy: sortColumn:reverseSort">
+<div ng-controller="angularController">
+    <div ng-repeat="product in products | filter: searchText | orderBy: sortColumn:reverseSort">
             <div class="card mb-3">
                     <div class="row no-gutters">
                       <div class="col-md-4">
@@ -21,30 +21,4 @@
                     </div>
                   </div>
     </div>
-
-
-
-
-
-<!-- <div ng-controller="angularController">
-        <div data-ng-repeat="product in products" class="">
-            <div class="card m-3 card-size shadow">
-                <img src="{{product.image}}" class="card-img-top image-size">
-                <div class="card-body">
-                    <h5 class="card-title card-title-size">{{ product.name }}</h5>
-                    <div class="row">
-                        <p class="card-text card-text-color col-md-6">{{ product.price }}</p>
-                        <p class="card-text card-text-size col-md-6">
-                            <i class="fas fa-star yellow"></i>
-                            <i class="fas fa-star yellow"></i>
-                            <i class="fas fa-star yellow"></i>
-                            <i class="fas fa-star yellow"></i>
-                            <i class="fas fa-star yellow"></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
+</div>
