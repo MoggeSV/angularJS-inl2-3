@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prototype inlämningsuppgift 2</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js"></script>
-    <script src="app.js"></script>
-    <script src="routes/routes.js"></script>
+    
+   
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
@@ -166,17 +165,20 @@
 
                 <div class="sortSearch">
                     <div class="row justify-content-between" ng-controller="buttonColorController">
-                        
-                            <div class="" ng-class="{'gridButtonActive': cardActive, 'gridButton': !cardActive }">
+                        <div class="row">
+                            <div ng-class="{'gridButtonActive': cardActive, 'gridButton': !cardActive }">
                                 <a href="#!/"><i class="fas fa-th" ng-click="cardActive = true"></i></a>
                             </div>
-
-                            <div class="" ng-class="{'gridButton': cardActive, 'gridButtonActive': !cardActive }">
+                            <div ng-class="{'gridButton': cardActive, 'gridButtonActive': !cardActive }">
                                 <a href="#!listview"><i class="fas fa-bars" ng-click="cardActive = false"></i></a>
                             </div>
-                        
+                        </div>
 
-                        <p id="numberShowing" class=" col-md-3 offset-md-2">Showing 1-12 out of 30 results</p>
+                        
+                        <div class="mt-3">
+                            <select class="sortButton p-2" ng-model="rowLimit.value" ng-options="v for v in rowLimit.values"></select>
+                        </div>
+
 
 
                         <div class="dropdown col-md-2 dropdownButton">
@@ -186,10 +188,9 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
                                 ng-controller="sortController" ng-model="$root.sortColumn">
-                                <option class="dropdown-item" ng-click="sortData('name')">Name</option>
+                                <option class="dropdown-item" ng-click="sortData('name')">Product</option>
                                 <option class="dropdown-item" ng-click="sortData('price')">Price</option>
                                 <option class="dropdown-item" ng-click="sortData('rating')">Rating</option>
-
                             </div>
                         </div>
 
@@ -199,7 +200,8 @@
 
                         <div class="searchBorderBox col-md-3">
                             <div class="input-group searchBox">
-                                <input type="text" class="form-control" placeholder="Search from here...." id="searchInput" ng-model="$root.searchText">
+                                <input type="text" class="form-control" placeholder="Search from here...."
+                                    id="searchInput" ng-model="$root.searchText">
                                 <div class="input-group-append">
                                     <span class="input-group-text mag-glass" id="basic-addon2">
                                         <i class="fas fa-search"></i>
@@ -412,12 +414,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js"></script>
+    
+    <script src="models/products.js"></script>
+    <script src="app.js"></script>
+    <script src="routes/routes.js"></script>
     <script src="controllers/angularController.js"></script>
     <script src="controllers/buttonColorController.js"></script>
     <script src="controllers/ratingController.js"></script>
     <script src="controllers/searchController.js"></script>
     <script src="controllers/sortController.js"></script>
-    <script src="models/products.js"></script>
+
 </body>
 
 </html>
